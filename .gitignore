@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# Env files
+.env
+.env.local
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# Solidity-coverage files
+/coverage
+/coverage.json
+
