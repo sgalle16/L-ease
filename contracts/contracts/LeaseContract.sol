@@ -116,7 +116,9 @@ contract LeaseContract {
     {
         require(msg.value == rentAmount, "Incorrect rent amount");
         // Transfer the rent to the lessor
-        payments.push(Payment({ amount: msg.value, timestamp: block.timestamp }));
+        payments.push(
+            Payment({ amount: msg.value, timestamp: block.timestamp })
+        );
         (bool success, ) = lessor.call{ value: msg.value }("");
         require(success, "Payment failed");
         emit RentPaid(tenant, msg.value);

@@ -1,19 +1,39 @@
-# Dependencies
+# dependencies
 node_modules
+.pnp
+.pnp.js
 
-# Env files
-.env
+# next.js
+.next/
+out/
+build
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+.eslintcache
+
+# vercel
+.vercel
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Hardhat files
-/cache
-/artifacts
+# turbo
+.turbo
 
-# TypeChain files
-/typechain
-/typechain-types
-
-# Solidity-coverage files
-/coverage
-/coverage.json
-
+# typescript
+*.tsbuildinfo
+next-env.d.ts
