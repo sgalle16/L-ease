@@ -7,13 +7,14 @@
         "skipLibCheck": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "outDir": "dist"
+        "outDir": "dist",
     },
     "include": [
         "./scripts/**/*",
         "test/**/*",
         "./contracts/**/*",
-        "hardhat.config.ts"
+        "hardhat.config.ts",
+        "./typechain-types"
     ],
     "files": ["hardhat.config.ts"]
 }
