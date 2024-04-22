@@ -1,5 +1,5 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../search/Header";
+import Footer from "../search/Footer";
 
 export default function SearchLayout({ children }) {
     return (
