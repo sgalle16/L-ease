@@ -1,14 +1,15 @@
 "use client";
 import InfoCard from "../components/InfoCard";
 import { useSearchStore } from "../../../store";
+import data1 from "../../listingsData.json";
 
 export const ResultsList = ({ data }) => {
   const searchLocation = useSearchStore((state) => state.location);
 
   const filteredListings =
     searchLocation === ""
-      ? data
-      : data.filter((listing) =>
+      ? data1
+      : data1.filter((listing) =>
           listing.name.toLowerCase().includes(searchLocation)
         );
 
