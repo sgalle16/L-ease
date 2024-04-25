@@ -98,7 +98,9 @@ export default function Create() {
                         />
                     </div>
 
+                                        
                     <div className="flex flex-row justify-between items-center border border-gray-300 p-2 rounded-xl mt-5">
+                        
                         <input
                             className="block flex-1 text-sm text-slate-500 bg-transparent border-0 focus:outline-none focus:ring-0"
                             type="url"
@@ -116,9 +118,9 @@ export default function Create() {
                             >
                                 Add image link
                             </button>
-                        )}
+                        )}                        
                     </div>
-
+                    <p className="text-sm text-gray-500 mt-1">5 image links are required</p>
                     <div className="flex flex-row justify-start items-center rounded-xl mt-5 space-x-1 flex-wrap">
                         {links.map((link, i) => (
                             <div key={i} className="p-2 rounded-full text-gray-500 bg-gray-200 font-semibold flex items-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease space-x-2 text-xs">

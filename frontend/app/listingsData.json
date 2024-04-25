@@ -46,53 +46,5 @@
     "image": "https://images.unsplash.com/photo-1620332372374-f108c53d2e03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80",
     "price": 180,
     "rating": 4.4
-  },
-  {
-    "id": 7,
-    "name": "Casa Juanmi",
-    "description": "asd",
-    "image": "https://user-images.githubusercontent.com/26466516/107675802-36216b80-6c77-11eb-8db1-4d3407dc53d9.png",
-    "price": 123,
-    "rating": 4
-  },
-  {
-    "id": 8,
-    "name": "Casa Juanmi2",
-    "description": "asd",
-    "image": "data:image/jpeg;base64",
-    "price": 123,
-    "rating": 4
-  },
-  {
-    "id": 9,
-    "name": "Casa Juanmi44",
-    "description": "asd",
-    "image": "https://img.freepik.com/vector-gratis/plantilla-pegatina-mini-casa-aislada_1308-60687.jpg",
-    "price": 420,
-    "rating": 4
-  },
-  {
-    "id": 10,
-    "name": "Casa Juanmi",
-    "description": "asdasdas",
-    "image": "https://user-images.githubusercontent.com/26466516/107675802-36216b80-6c77-11eb-8db1-4d3407dc53d9.png",
-    "price": 420,
-    "rating": 4
-  },
-  {
-    "id": 11,
-    "name": "Casa Juanmi",
-    "description": "sisas",
-    "image": "https://user-images.githubusercontent.com/26466516/107675802-36216b80-6c77-11eb-8db1-4d3407dc53d9.png",
-    "price": 420,
-    "rating": 4
-  },
-  {
-    "id": 12,
-    "name": "asd",
-    "description": "asdasd",
-    "image": "https://user-images.githubusercontent.com/26466516/107675802-36216b80-6c77-11eb-8db1-4d3407dc53d9.png",
-    "price": 110000,
-    "rating": 4
   }
 ]
