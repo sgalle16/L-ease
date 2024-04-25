@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+
+import Link from 'next/link';
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { HeartIcon as FilledHeartIcon } from "@heroicons/react/24/solid";
 import { StarIcon } from "@heroicons/react/24/solid";
@@ -13,11 +15,14 @@ const InfoCard = ({ listing }) => {
 
   return (
     <div className="md:max-w-md md:mx-auto shadow-md rounded-lg overflow-hidden relative">
-      <img
-        src={listing.image}
-        alt={listing.name}
-        className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"
-      />
+      
+      <Link href={`/details/${listing.id}`}>
+        <img
+          src={listing.image}
+          alt={listing.name}
+          className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"
+        />
+      </Link>
       <div className="p-4">
         <div className="flex items-center justify-between mb-2">
           <h3 className="text-black font-semibold mb-2">{listing.name}</h3>

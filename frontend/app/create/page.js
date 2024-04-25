@@ -7,12 +7,8 @@ export default async function Page() {
 
     return (
         <div className="flex flex-col min-h-screen">
-            <Head>
-                <title>RentEvo - Home Page</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <p>Eclipse Tech</p>
-            <p>‎ </p>
+            <br></br>
+            <br></br>
             <div>
                 <Create />
             </div>

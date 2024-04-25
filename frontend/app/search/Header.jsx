@@ -1,5 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
+
+import Link from 'next/link';
 import SearchBar from "./components/SearchBar";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
@@ -123,9 +125,9 @@ export default function Header() {
     <>
       <header ref={ref} className="flex border-b bg-white z-50 fixed w-full">
         <div className={headerContainerClasses}>
-          <div className="text-red-500 hidden md:block">
+          <Link href="/" className="text-red-500 hidden md:block">
             <Image href="/search" src="/images/logo2.png" height={50} width={172} alt="Logo" />
-          </div>
+          </Link>
           <div className="hidden md:flex flex-col grow">
             <motion.div
               className="flex flex-col justify-center"
@@ -144,6 +146,15 @@ export default function Header() {
               variants={searchContainerVariants}
               className={searchContainerClasses}
             >
+
+              <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
+                <p style={{ color: 'black' }}>
+                  {searchStore.location !== ""
+                    ? searchStore.location
+                    : " "}
+                </p>
+              </div>
+
               <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
                 <p style={{ color: 'black' }}>
                   {searchStore.location !== ""
@@ -156,7 +167,7 @@ export default function Header() {
                 <p style={{ color: 'black' }}>
                   {searchStore.location !== ""
                     ? searchStore.location
-                    : "Any Date"}
+                    : "Any Cost"}
                 </p>
               </div>
 
@@ -164,7 +175,7 @@ export default function Header() {
                 <p style={{ color: 'black' }}>
                   {searchStore.location !== ""
                     ? searchStore.location
-                    : "Add apartment"}
+                    : " "}
                 </p>
               </div>
 
