@@ -3,7 +3,7 @@
 First, install dependencies:
 
 ```npm
-cd Front
+cd frontend
 npm install
 ```
 Then, run the development server:
