@@ -24,18 +24,14 @@ const InfoCard = ({ listing }) => {
         />
       </Link>
       <div className="p-4">
-        <div className="flex items-center justify-between mb-1">
-          <h3 className="text-black font-semibold capitalize mb-1">{listing.name}</h3>
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="text-black font-semibold mb-2">{listing.name}</h3>
           <div className="flex items-center">
             <StarIcon className="h-5 w-5 text-yellow-500 mr-1" />
             <span className="text-gray-800">{listing.rating}</span>
           </div>
         </div>
-        <p className="text-gray-600 mb-1 Capitalize">{listing.location}</p>
-        <p className="text-gray-600 mb-1">
-          {`$${listing.price.toLocaleString('es-CO')}`}
-        </p>
-
+        <p className="text-gray-600 mb-6">{listing.description}</p>
         <button
           onClick={handleFavoriteUpdate}
           className="absolute bottom-4 right-4 p-2 z-30"

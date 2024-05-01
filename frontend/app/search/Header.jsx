@@ -148,35 +148,25 @@ export default function Header() {
             >
 
               <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
-                <p style={{ color: 'black' }}>
-                  {searchStore.location !== ""
-                    ? searchStore.location
-                    : " "}
-                </p>
               </div>
+
+              <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
+              </div>
+
 
               <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
                 <p style={{ color: 'black' }}>
                   {searchStore.location !== ""
                     ? searchStore.location
-                    : "Anywhere"}
+                    : "Buscar Propiedades"}
                 </p>
               </div>
 
               <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
-                <p style={{ color: 'black' }}>
-                  {searchStore.location !== ""
-                    ? searchStore.location
-                    : "Any Cost"}
-                </p>
               </div>
 
+
               <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
-                <p style={{ color: 'black' }}>
-                  {searchStore.location !== ""
-                    ? searchStore.location
-                    : " "}
-                </p>
               </div>
 
               <div className="search-btn px-4 rounded-full bg-black h-10 w-10 relative">

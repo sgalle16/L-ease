@@ -3,7 +3,7 @@ import InfoCard from "../components/InfoCard";
 import { useSearchStore } from "../../../store";
 import data1 from "../../listingsData.json";
 
-export const ResultsList = ({ data }) => {
+export const ResultsList = ({ }) => {
   const searchLocation = useSearchStore((state) => state.location);
 
   const filteredListings =
@@ -14,7 +14,7 @@ export const ResultsList = ({ data }) => {
         );
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
       {filteredListings.map((listing) => (
         <InfoCard listing={listing} key={listing.id} />
       ))}

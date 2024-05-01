@@ -47,11 +47,11 @@ const SearchBar = ({ toggleExpanded }) => {
         className="border-r px-4 text-left grow"
         onClick={() => setIsSearchFocused(true)}
       >
-        <p className="font-bold">Where</p>
+        <p className="font-bold">Dónde</p>
         {isSearchFocused ? (
           <input
             type="text"
-            placeholder="Search destinations"
+            placeholder="Busca lugares"
             onChange={handleLocationUpdate}
             value={locationInput}
             className="text-slate-800 bg-transparent border-none outline-none"
@@ -60,13 +60,13 @@ const SearchBar = ({ toggleExpanded }) => {
           <p className="text-slate-600">
             {locationInput && locationInput !== ""
               ? locationInput
-              : "Search Destinations"}
+              : "Busca lugares"}
           </p>
         )}
       </button>
       <div className="dropdown dropdown-end px-4">
         <label tabIndex={2}>
-          <p className="font-bold">How</p>
+          <p className="font-bold">Cómo</p>
           <p className="text-slate-600">
             {count > 0 ? `${count} rooms` : "Rooms"}
           </p>
@@ -83,7 +83,7 @@ const SearchBar = ({ toggleExpanded }) => {
         className="px-4 text-white rounded-full bg-black p-4 flex justify-center gap-3 flex-row"
       >
         <MagnifyingGlassIcon className="w-5 h-5" />
-        <span>Search</span>
+        <span>Buscar</span>
       </button>
     </div>
   );

@@ -1,10 +1,14 @@
 [
   {
     "id": 1,
-    "name": "Cozy Cottage en yolombo",
-    "description": "A charming cottage in a peaceful location.",
+    "name": "Cozy Cottage en Yolombó",
+    "owner": "Juanmi ",
+    "description": "Bonita casa mela en Yolombó",
+    "location": "Yolombó, Antioquia",
     "image": "https://images.unsplash.com/photo-1623050804066-42bcedb4e81d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
     "price": 100,
+    "email": "juanmi@gmail.com",
+    "phone": "3103827633",
     "rating": 4.5
   },
   {
@@ -46,5 +50,34 @@
     "image": "https://images.unsplash.com/photo-1620332372374-f108c53d2e03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80",
     "price": 180,
     "rating": 4.4
+  },
+  {
+    "id": 7,
+    "name": "Casa Juanmi ",
+    "owner": "Juanmi ",
+    "description": "asdasad",
+    "image": "https://images.unsplash.com/photo-1623050804066-42bcedb4e81d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+    "price": 800000,
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "name": "Casa Juanmi ",
+    "description": "asdasd",
+    "image": "https://images.unsplash.com/photo-1623050804066-42bcedb4e81d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+    "price": 280000,
+    "rating": 4
+  },
+  {
+    "id": 9,
+    "name": "Casa Juan miguel",
+    "owner": "Juan Miguel Castro",
+    "description": "3 Habitaciones",
+    "location": "Bello, Antioquia",
+    "image": "https://images.unsplash.com/photo-1623050804066-42bcedb4e81d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+    "price": 800000,
+    "email": "juanmi11102@gmail.com",
+    "phone": "3108968339",
+    "rating": 4
   }
 ]

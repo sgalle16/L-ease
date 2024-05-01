@@ -18,28 +18,28 @@ const Category = () => {
         <p className="flex flex-col items-center hover:text-black border-b-2
         border-transparent hover:border-black hover:cursor-pointer pb-2">
           <FaHouseMedical className="text-3xl" />
-          Add Property
+          Subir Propiedad
         </p>
       </Link>
       <p className="flex flex-col items-center hover:text-black border-b-2
        border-transparent hover:border-black hover:cursor-pointer pb-2">
         <BsHouses className="text-3xl" />
-        My Properties
+        Mis Propiedades
       </p>
       <p className="flex flex-col items-center hover:text-black border-b-2
        border-transparent hover:border-black hover:cursor-pointer pb-2">
         <LiaFileContractSolid className="text-3xl" />
-        My Contracts
+        Mis contratos
       </p>
       <p className="flex flex-col items-center hover:text-black border-b-2
        border-transparent hover:border-black hover:cursor-pointer pb-2">
         <HiClipboardDocumentList className="text-3xl" />
-        Contract History
+        Historial de contratos
       </p>
       <p className="flex flex-col items-center hover:text-black border-b-2
        border-transparent hover:border-black hover:cursor-pointer pb-2">
         <FaRegUser className="text-3xl" />
-        My Profile
+        Mi Perfil
       </p>
     </div>
   )

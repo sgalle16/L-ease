@@ -22,9 +22,13 @@ export async function POST(req) {
         const newListing = {
             id: newId,
             name: data.name,
+            owner: data.owner,
             description: data.description,
+            location: data.location,
             image: data.images.split(',')[0], // Utiliza el primer enlace de los cinco
             price: parseFloat(data.price),
+            email: data.email,
+            phone: data.phone,
             rating: 4.0, // Calificación por defecto
         };
 

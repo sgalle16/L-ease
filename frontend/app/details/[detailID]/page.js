@@ -41,9 +41,6 @@ export default function Page() {
                 <title>Property Details - {property.name}</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <br />
-            <br />
-            <br />
             <div>
                 <Title apartment={property} />
                 <Details apartment={property} />
