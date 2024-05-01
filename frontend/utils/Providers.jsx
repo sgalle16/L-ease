@@ -5,7 +5,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 import {
   connectorsForWallets,
-  darkTheme,
+  midnightTheme,
   getDefaultWallets,
   getDefaultConfig,
   RainbowKitProvider,
@@ -24,7 +24,6 @@ import {
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WagmiProvider } from "wagmi";
-//import { alchemyProvider, publicProvider } from "wagmi/providers";
 
 const { wallets } = getDefaultWallets();
 
@@ -40,8 +39,6 @@ import {
   sepolia,
   zora,
 } from "wagmi/chains";
-
-const _projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
 const wagmiConfig = getDefaultConfig({
   appName: "RentEvo App",
@@ -80,11 +77,8 @@ const wagmiConfig = getDefaultConfig({
 
 const queryClient = new QueryClient();
 
-const Providers = ({ children }) => {
-  // const [mounted, setMounted] = useState(false);
-  // useEffect(() => setMounted(true), []);
+const Providers = ({ children, pageProps }) => {
   const [mounted, setMounted] = useState(false);
-
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -94,9 +88,16 @@ const Providers = ({ children }) => {
   return (
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider chains={wagmiConfig.chains} theme={darkTheme()}>
-          {/* {mounted && children} */}
-          {children}
+        <RainbowKitProvider
+          chains={wagmiConfig.chains}
+          theme={midnightTheme({
+            accentColor: "#EAB308", // use of yellow color
+            accentColorForeground: "black",
+            overlayBlur: "small",
+          })}
+          locale="es-419"
+        >
+          {mounted && children}
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>

@@ -13,7 +13,7 @@ export default async function Page() {
             <div>
                 <Category />
             </div>
-            <ResultsList />
+            <ResultsList /*data={data}*/ />
         </div>
     );
 }
