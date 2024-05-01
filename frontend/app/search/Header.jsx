@@ -170,6 +170,7 @@ export default function Header() {
               <div className="input flex items-center border-r px-4" style={{ backgroundColor: 'transparent' }}>
               </div>
 
+
               <div className="search-btn px-4 rounded-full bg-black h-10 w-10 relative">
                 <MagnifyingGlassIcon className="h-4 w-5 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
               </div>
