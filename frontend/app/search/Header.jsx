@@ -10,6 +10,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useSearchStore, initialState } from "../../store";
 import MobileNav from "./components/MobileNav";
+import ConnectBtn from "../auth/wallet/ConnectBtn";
 
 export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -190,6 +191,16 @@ export default function Header() {
           </div>
           <div className={userIconClasses}>
             <Image src="/images/user.svg" height={30} width={30} alt="User" />
+            {/** Connect Wallet Button */}
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                padding: 12,
+              }}
+            >
+              <ConnectBtn />
+            </div>       
           </div>
         </div>
       </header>
