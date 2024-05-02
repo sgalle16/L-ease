@@ -1,5 +1,5 @@
 {
-    "name": "l-ease",
+    "name": "rentevo",
     "version": "0.1.0",
     "private": true,
     "license": "MIT",
@@ -9,6 +9,9 @@
         "contracts"
     ],
     "scripts": {
+        "build": "yarn workspaces run build",
+        "dev": "yarn workspace frontend dev",
+        "compile": "yarn workspace contracts compile",
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
         "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,md,json}\""
     }

@@ -1,0 +1,26 @@
+
+body {
+  
+  background-color: #FFFFFF;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+}
+
+
+html, body, #__next {
+  height: 100%;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-height-container {
+  min-height: 100vh;
+}
+
+
