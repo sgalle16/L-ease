@@ -32,8 +32,10 @@ const Details = ({ apartment }) => {
       <div className=" flex space-x-4">
         <FiCalendar className="text-4xl" />
         <div>
-          <h1 className="text-xl font-semibold">Advance monthly payment.</h1>
+          <h1 className="text-xl font-semibold">Pago mensual anticipado.</h1>
+          <p className="cursor-pointer">{`$${apartment.price.toLocaleString('es-CO')}`}</p>
         </div>
+        
       </div>
       <button
             type="submit"
