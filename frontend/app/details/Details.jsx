@@ -2,6 +2,7 @@ import { BiMedal, BiBookOpen } from 'react-icons/bi'
 import { FiCalendar } from 'react-icons/fi'
 
 const Details = ({ apartment }) => {
+  if (!apartment) return null;
   return (
     <div className="py-5 border-b-2 border-b-slate-200 space-y-4">
       <h1 className="text-xl font-semibold">Descripción</h1>
@@ -32,8 +33,10 @@ const Details = ({ apartment }) => {
       <div className=" flex space-x-4">
         <FiCalendar className="text-4xl" />
         <div>
-          <h1 className="text-xl font-semibold">Advance monthly payment.</h1>
+          <h1 className="text-xl font-semibold">Pago mensual anticipado.</h1>
+          <p className="cursor-pointer">{`$${apartment.price.toLocaleString('es-CO')}`}</p>
         </div>
+        
       </div>
       <button
             type="submit"
