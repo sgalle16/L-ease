@@ -2,6 +2,7 @@ import InfoCard from "../search/components/InfoCard";
 import Link from 'next/link';
 
 const Title = ({ apartment }) => {
+  if (!apartment) return null;
   return (
     <div>
       <h1 className="text-black text-3xl font-semibold capitalize">{apartment.name}</h1>

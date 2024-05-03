@@ -20,14 +20,7 @@ export default function Page() {
     console.log('detailIDNum:', detailIDNum);
 
     // Filtra para obtener la propiedad que coincida con el ID.
-    let property = null;
-    data.forEach(item => {
-        // Imprime el valor de item.id para depurar.
-        console.log('item.id:', item.id);
-        if (item.id === detailIDNum) {
-            property = item;
-        }
-    });
+    const property = data.find(item => item.id === detailIDNum);
 
     // Si no se encuentra la propiedad, devuelve "Property not found".
     if (!property) {

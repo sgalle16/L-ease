@@ -2,6 +2,7 @@ import { BiMedal, BiBookOpen } from 'react-icons/bi'
 import { FiCalendar } from 'react-icons/fi'
 
 const Details = ({ apartment }) => {
+  if (!apartment) return null;
   return (
     <div className="py-5 border-b-2 border-b-slate-200 space-y-4">
       <h1 className="text-xl font-semibold">Descripción</h1>
