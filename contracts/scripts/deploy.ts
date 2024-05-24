@@ -1,5 +1,6 @@
 import { ethers } from "hardhat";
 import * as dotenv from "dotenv";
+import { sendDataFront } from "../utils/sendDataFront";
 
 dotenv.config();
 
@@ -31,6 +32,9 @@ async function main() {
     await leaseContract.waitForDeployment();
 
     console.log("Lease Contract deployed to:", leaseContract.target);
+
+    // Send data to frontend with the lease contract deployed
+    sendDataFront(leaseContract.target as string);
 }
 
 main()
